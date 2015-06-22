@@ -64,7 +64,7 @@ int main(int argc, const char * argv[]) {
         }
         
         Car *honda = [[Car alloc] init];
-//        honda.running = twYES; // this causes error because `running` is readonly
+//        honda.running = YES; // this causes error because `running` is readonly
         [honda startEngine];
         NSLog(@"%d", honda.running);
         NSLog(@"%d", [honda isRunning]);
@@ -82,7 +82,7 @@ int main(int argc, const char * argv[]) {
         
         // parent-child data
         // parent should maintain a strong ref with its children
-        // children should store a wek ref back to the parent
+        // children should store a weak ref back to the parent
         
         // the key point: 2 objects should NEVER have strong ref to each other
         
