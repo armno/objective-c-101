@@ -58,3 +58,15 @@ learning object-c with [Ry's tutorial](http://rypress.com/tutorials/objective-c/
 - unless we tell it to do so, by putting `__block` modifier in variable declaration
 - doing so makes the variable holds the reference to non-local variable. just like the static local variable.
 - just like in javascript, a block can be passed as a method parameter.
+
+### exceptions
+
+- exceptions should be used only when necessary, not on every flow control.
+- exceptions anatomy: type (name), reason, and userInfo
+
+### errors
+
+- errors represent **expected** problems.
+- `NSError` = domain, code, userInfo
+- cutom error class can be handy in large application.
+- best practice: **define all errors in a dedicated header file**
