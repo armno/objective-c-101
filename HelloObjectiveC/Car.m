@@ -28,4 +28,11 @@
     NSLog(@"The %@ is turing right", _model);
 }
 
+-(void)driveForDuration:(double)duration withVariableSpeed:(double (^)(double))speedFunction steps:(int)numSteps {
+    double dt = duration / numSteps;
+    for (int i = 1; i <= numSteps; i++) {
+        _odometer += speedFunction(i*dt) * dt;
+    }
+}
+
 @end
