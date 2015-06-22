@@ -62,6 +62,39 @@ int main(int argc, const char * argv[]) {
         if (NSClassFromString(@"Car") == [Car class]) {
             NSLog(@"I can convert between strings and classes!");
         }
+        
+        Car *honda = [[Car alloc] init];
+//        honda.running = twYES; // this causes error because `running` is readonly
+        [honda startEngine];
+        NSLog(@"%d", honda.running);
+        NSLog(@"%d", [honda isRunning]);
+        
+        Person *john = [[Person alloc] init];
+        john.name = @"John";
+        
+        Car *porsche = [[Car alloc] init];
+        porsche.model = @"Carrera GT";
+        porsche.driver = john;
+
+        // retain cycle: memory management won't be able to destroy even if they are no longer needed
+        // we can fix by using a "weak reference"
+        john.car = porsche;
+        
+        // parent-child data
+        // parent should maintain a strong ref with its children
+        // children should store a wek ref back to the parent
+        
+        // the key point: 2 objects should NEVER have strong ref to each other
+        
+        NSLog(@"%@ is driving the %@", porsche.driver, porsche.model);
+        
+        Car *lambo = [[Car alloc] init];
+        NSMutableString *model = [NSMutableString stringWithString:@"Lamboghini Evtro"];
+        lambo.model = model;
+        
+        NSLog(@"%@", lambo.model);
+        [model setString:@"Lambo somethingelse"];
+        NSLog(@"%@", lambo.model); // still `Evtro`
     }
     return 0;
 }

@@ -7,16 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 @interface Car : NSObject {
     // protected instance vairables (not recommended
 }
 
-@property (copy) NSString *model;
+@property (nonatomic, copy) NSString *model;
+@property (getter=isRunning, readonly) BOOL running;
+//@property (nonatomic) NSString *modele; // non-atomic property declaration
+@property (nonatomic, strong) Person *driver;
 
 // `-` is for "instance method"
 - (void)drive;
 - (id)initWithModel:(NSString *)aModel;
+- (void)startEngine;
+- (void)stopEngine;
 
 // `+` is for "class method"
 + (void)setDefaultModel:(NSString *)aModel;
