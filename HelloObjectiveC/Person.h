@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class Car; // "trust me, the Class har exists, so don't try to find it right now"
+@class Car_old; // "trust me, the Class har exists, so don't try to find it right now"
 // we do this because in Car.h it also imports Person.h
 // it could end up with circular imports
 
 @interface Person : NSObject
 
 @property (nonatomic) NSString *name;
-@property (nonatomic, weak) Car *car;
+@property (nonatomic, weak) Car_old *car;
 
 @end

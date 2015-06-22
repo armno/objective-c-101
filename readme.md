@@ -37,3 +37,15 @@ learning object-c with [Ry's tutorial](http://rypress.com/tutorials/objective-c/
 - parent-child data: parent should maintain a strong reference with its children
 - but children should store a weak reference back to the parent
 - **2 objects should NEVER have strong references to each other**
+
+### protocols
+
+- to me, protocols are like interfaces. they contain only method definition but not implementation.
+- protocols are in `.h` files. they are used in another header files. `#import` is also required.
+
+### categories and extensions
+
+- such confusing concepts ... i'm dead now.
+- categories are used for separate methods of a class into multiple implementations.
+- categories should never re-define methods that exist already in another implementation file.
+- categories and extensions both have something to do with private methods. i just don't know what they are about.

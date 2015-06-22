@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74ECDCFD1B37C89200F23DBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDCFC1B37C89200F23DBB /* main.m */; };
-		74ECDD051B37D16E00F23DBB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDD041B37D16E00F23DBB /* Car.m */; };
+		740174561B381B63007441A9 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174551B381B63007441A9 /* Bicycle.m */; };
+		740174581B381C8A007441A9 /* main_bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174571B381C8A007441A9 /* main_bicycle.m */; };
+		7401745B1B381F70007441A9 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401745A1B381F70007441A9 /* Car.m */; };
+		740174641B38214E007441A9 /* Car+Maintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174631B38214E007441A9 /* Car+Maintenance.m */; };
+		740174671B382331007441A9 /* Car+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174661B382331007441A9 /* Car+Protected.m */; };
+		7401746A1B3823CB007441A9 /* Coupe.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174691B3823CB007441A9 /* Coupe.m */; };
+		74ECDD051B37D16E00F23DBB /* Car_old.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDD041B37D16E00F23DBB /* Car_old.m */; };
 		74ECDD081B37E4AA00F23DBB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDD071B37E4AA00F23DBB /* Person.m */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +30,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		740174531B3819D7007441A9 /* StreetLegal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetLegal.h; sourceTree = "<group>"; };
+		740174541B381AC1007441A9 /* Bicycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
+		740174551B381B63007441A9 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
+		740174571B381C8A007441A9 /* main_bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_bicycle.m; sourceTree = "<group>"; };
+		740174591B381F70007441A9 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		7401745A1B381F70007441A9 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		740174621B38214E007441A9 /* Car+Maintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Car+Maintenance.h"; path = "../Car+Maintenance.h"; sourceTree = "<group>"; };
+		740174631B38214E007441A9 /* Car+Maintenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Car+Maintenance.m"; path = "../Car+Maintenance.m"; sourceTree = "<group>"; };
+		740174651B382331007441A9 /* Car+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Protected.h"; sourceTree = "<group>"; };
+		740174661B382331007441A9 /* Car+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Protected.m"; sourceTree = "<group>"; };
+		740174681B3823CB007441A9 /* Coupe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coupe.h; sourceTree = "<group>"; };
+		740174691B3823CB007441A9 /* Coupe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coupe.m; sourceTree = "<group>"; };
 		74ECDCF91B37C89200F23DBB /* HelloObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ECDCFC1B37C89200F23DBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74ECDD031B37D16E00F23DBB /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		74ECDD041B37D16E00F23DBB /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		74ECDD031B37D16E00F23DBB /* Car_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car_old.h; sourceTree = "<group>"; };
+		74ECDD041B37D16E00F23DBB /* Car_old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car_old.m; sourceTree = "<group>"; };
 		74ECDD061B37E4AA00F23DBB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		74ECDD071B37E4AA00F23DBB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,11 +80,23 @@
 		74ECDCFB1B37C89200F23DBB /* HelloObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				740174621B38214E007441A9 /* Car+Maintenance.h */,
+				740174631B38214E007441A9 /* Car+Maintenance.m */,
 				74ECDCFC1B37C89200F23DBB /* main.m */,
+				740174571B381C8A007441A9 /* main_bicycle.m */,
+				740174651B382331007441A9 /* Car+Protected.h */,
+				740174661B382331007441A9 /* Car+Protected.m */,
+				740174681B3823CB007441A9 /* Coupe.h */,
+				740174691B3823CB007441A9 /* Coupe.m */,
 				74ECDD061B37E4AA00F23DBB /* Person.h */,
 				74ECDD071B37E4AA00F23DBB /* Person.m */,
-				74ECDD031B37D16E00F23DBB /* Car.h */,
-				74ECDD041B37D16E00F23DBB /* Car.m */,
+				74ECDD031B37D16E00F23DBB /* Car_old.h */,
+				740174591B381F70007441A9 /* Car.h */,
+				7401745A1B381F70007441A9 /* Car.m */,
+				74ECDD041B37D16E00F23DBB /* Car_old.m */,
+				740174531B3819D7007441A9 /* StreetLegal.h */,
+				740174541B381AC1007441A9 /* Bicycle.h */,
+				740174551B381B63007441A9 /* Bicycle.m */,
 			);
 			path = HelloObjectiveC;
 			sourceTree = "<group>";
@@ -128,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740174671B382331007441A9 /* Car+Protected.m in Sources */,
+				740174641B38214E007441A9 /* Car+Maintenance.m in Sources */,
+				7401745B1B381F70007441A9 /* Car.m in Sources */,
 				74ECDD081B37E4AA00F23DBB /* Person.m in Sources */,
-				74ECDD051B37D16E00F23DBB /* Car.m in Sources */,
-				74ECDCFD1B37C89200F23DBB /* main.m in Sources */,
+				740174581B381C8A007441A9 /* main_bicycle.m in Sources */,
+				74ECDD051B37D16E00F23DBB /* Car_old.m in Sources */,
+				7401746A1B3823CB007441A9 /* Coupe.m in Sources */,
+				740174561B381B63007441A9 /* Bicycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +281,7 @@
 				74ECDD021B37C89200F23DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

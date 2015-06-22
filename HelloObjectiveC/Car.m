@@ -7,50 +7,25 @@
 //
 
 #import "Car.h"
+#import "Car+Protected.h"
 
-static NSString *_defaultModel;
+@implementation Car
 
-@implementation Car {
-    // private instance variable
-    double _odometer;
+-(void)startEngine {
+    NSLog(@"Starting the %@'s engine", _model);
 }
 
-//@synthesize running = _running; // optional for xcode 4.4
-
-+ (void)initialize {
-    if (self == [Car class]) {
-        _defaultModel = @"Nissan GT-R";
-    }
+-(void)drive {
+    [self prepareToDrive];
+    NSLog(@"The %@ is now driving", _model);
 }
 
-+ (void)setDefaultModel:(NSString *)aModel {
-    _defaultModel = [aModel copy];
+-(void)turnLeft {
+    NSLog(@"The %@ is turning left", _model);
 }
 
-- (void)drive {
-    NSLog(@"Driving a %@. Vrooom!", self.model);
-}
-
-- (id)initWithModel:(NSString *)aModel {
-    self = [super init];
-    if (self) {
-        _model = [aModel copy];
-        _odometer = 0;
-    }
-    
-    return self;
-}
-
-- (id)init {
-    return [self initWithModel:_defaultModel];
-}
-
-- (void)startEngine {
-    _running = YES;
-}
-
-- (void)stopEngine {
-    _running = NO;
+-(void)turnRight {
+    NSLog(@"The %@ is turing right", _model);
 }
 
 @end
