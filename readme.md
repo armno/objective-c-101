@@ -49,3 +49,24 @@ learning object-c with [Ry's tutorial](http://rypress.com/tutorials/objective-c/
 - categories are used for separate methods of a class into multiple implementations.
 - categories should never re-define methods that exist already in another implementation file.
 - categories and extensions both have something to do with private methods. i just don't know what they are about.
+
+### blocks
+
+- blocks == annonymous function in objective-c
+- closure: can access a snapshot version of non-local variable
+- so changing non-local variable's value after the closure is created doesn't change the value
+- unless we tell it to do so, by putting `__block` modifier in variable declaration
+- doing so makes the variable holds the reference to non-local variable. just like the static local variable.
+- just like in javascript, a block can be passed as a method parameter.
+
+### exceptions
+
+- exceptions should be used only when necessary, not on every flow control.
+- exceptions anatomy: type (name), reason, and userInfo
+
+### errors
+
+- errors represent **expected** problems.
+- `NSError` = domain, code, userInfo
+- cutom error class can be handy in large application.
+- best practice: **define all errors in a dedicated header file**

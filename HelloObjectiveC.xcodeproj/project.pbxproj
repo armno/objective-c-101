@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		740174561B381B63007441A9 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174551B381B63007441A9 /* Bicycle.m */; };
-		740174581B381C8A007441A9 /* main_bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174571B381C8A007441A9 /* main_bicycle.m */; };
 		7401745B1B381F70007441A9 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 7401745A1B381F70007441A9 /* Car.m */; };
 		740174641B38214E007441A9 /* Car+Maintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174631B38214E007441A9 /* Car+Maintenance.m */; };
 		740174671B382331007441A9 /* Car+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174661B382331007441A9 /* Car+Protected.m */; };
 		7401746A1B3823CB007441A9 /* Coupe.m in Sources */ = {isa = PBXBuildFile; fileRef = 740174691B3823CB007441A9 /* Coupe.m */; };
+		740DF4141B386DF600156BDD /* main_error.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DF4131B386DF600156BDD /* main_error.m */; };
 		74ECDD051B37D16E00F23DBB /* Car_old.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDD041B37D16E00F23DBB /* Car_old.m */; };
 		74ECDD081B37E4AA00F23DBB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ECDD071B37E4AA00F23DBB /* Person.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,10 @@
 		740174661B382331007441A9 /* Car+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Protected.m"; sourceTree = "<group>"; };
 		740174681B3823CB007441A9 /* Coupe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coupe.h; sourceTree = "<group>"; };
 		740174691B3823CB007441A9 /* Coupe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coupe.m; sourceTree = "<group>"; };
+		740DF40F1B38643500156BDD /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		740DF4111B38692800156BDD /* main_exceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_exceptions.m; sourceTree = "<group>"; };
+		740DF4131B386DF600156BDD /* main_error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_error.m; sourceTree = "<group>"; };
+		740DF4151B386F6F00156BDD /* InventoryErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryErrors.h; sourceTree = "<group>"; };
 		74ECDCF91B37C89200F23DBB /* HelloObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ECDCFC1B37C89200F23DBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74ECDD031B37D16E00F23DBB /* Car_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car_old.h; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			children = (
 				74ECDCFB1B37C89200F23DBB /* HelloObjectiveC */,
 				74ECDCFA1B37C89200F23DBB /* Products */,
+				740DF40F1B38643500156BDD /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +85,9 @@
 		74ECDCFB1B37C89200F23DBB /* HelloObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				740DF4111B38692800156BDD /* main_exceptions.m */,
+				740DF4131B386DF600156BDD /* main_error.m */,
+				740DF4151B386F6F00156BDD /* InventoryErrors.h */,
 				740174621B38214E007441A9 /* Car+Maintenance.h */,
 				740174631B38214E007441A9 /* Car+Maintenance.m */,
 				74ECDCFC1B37C89200F23DBB /* main.m */,
@@ -161,7 +169,7 @@
 				740174641B38214E007441A9 /* Car+Maintenance.m in Sources */,
 				7401745B1B381F70007441A9 /* Car.m in Sources */,
 				74ECDD081B37E4AA00F23DBB /* Person.m in Sources */,
-				740174581B381C8A007441A9 /* main_bicycle.m in Sources */,
+				740DF4141B386DF600156BDD /* main_error.m in Sources */,
 				74ECDD051B37D16E00F23DBB /* Car_old.m in Sources */,
 				7401746A1B3823CB007441A9 /* Coupe.m in Sources */,
 				740174561B381B63007441A9 /* Bicycle.m in Sources */,

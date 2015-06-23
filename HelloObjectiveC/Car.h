@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef double (^SpeedFunction)(double);
+
 @interface Car : NSObject
 
 @property (copy) NSString *model;
@@ -17,5 +19,9 @@
 -(void)drive;
 -(void)turnLeft;
 -(void)turnRight;
+
+-(void)driveForDuration:(double)duration
+      withVariableSpeed:(SpeedFunction)speedFunction
+                  steps:(int)numSteps;
 
 @end
