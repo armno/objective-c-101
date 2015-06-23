@@ -62,7 +62,7 @@ learning object-c with [Ry's tutorial](http://rypress.com/tutorials/objective-c/
 ### exceptions
 
 - exceptions should be used only when necessary, not on every flow control.
-- exceptions anatomy: type (name), reason, and userInfo
+- exceptions =: type (name), reason, and userInfo
 
 ### errors
 
@@ -70,3 +70,44 @@ learning object-c with [Ry's tutorial](http://rypress.com/tutorials/objective-c/
 - `NSError` = domain, code, userInfo
 - cutom error class can be handy in large application.
 - best practice: **define all errors in a dedicated header file**
+
+### data types
+
+- there are 2 ways to instantiate an object: 1) `alloc` and `init` pattern. 2) factory method `[NSNumber numberWithInt:99]` (foundation framework)
+- objects can be compared by their pointers using `==`: 2 pointers are pointing to the same memory address. therefore, they are the same object (not useful).
+- another way is to compare by their values using methods like `isEqualToNumber`. this is more common used.
+
+#### primitives
+
+- `void`
+- `integer` (`short` <= `int` <= `long` <= `long long`)
+- fixed-width `integer`
+- floating points (`float` <= `double` <= `long`)
+
+#### other types
+
+- (objective-c) `id`: store a reference to any object.
+- (objective-c) `class`
+- (objective-c) `SEL`: selectors = internal representation of method names
+- (objective-c) `NSInteger` and `NSUInteger` (foundation framework)
+- (objective-c) `NSDecimalNumber`: base 10 calculations, lossless precisions, predicatble rounding behavior
+- (c) `NSDecimal`: better to use `NSDecimalNumber`
+- (objetive-c) `NSString` and `NSMutableString` - the mutable one is useful for performing small edits/manipulations to the same strings
+- comparing strings: `isEqualToString`, `hasPrefix`, and `hasSuffix`
+
+- `NSSet`: a group of unordered objects. `nil`-terminated.
+- `NSArray`: a group of objects, with orders.
+- `NSDictionary`: a group of key-value paired of objects (hash?)
+- primitives need to be converted to objective-c objects before putting in these collections
+- creating `NSArray`: `@[]` (not `nil`-terminated) or with `[NSArray arrayWithObjects]` (`nil`-terminated)
+- enumerating `NSSet`: `for (NSString car in cars)` (fast-enumeration)
+- enumerating `NSArray`: can use fast-enumeration or traditional for loop (with `count` method)
+- or even with Blocks: `[Arr enumerateObjectsUsingBlock]`
+- `NSDictionary` is actually like `NSArray` with keys (like objects in javascript duay)
+
+### dates
+
+- `NSDate`: useful with a calendar or date formatter (like timestamp?)
+- `NSCalendar`: converts between dates and date components
+- `NSDateFormatter`: converts between `NSDate` and `NSString`
+- `NSLocale`, `NSTimeZone`
